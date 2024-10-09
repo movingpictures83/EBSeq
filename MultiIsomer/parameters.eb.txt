@@ -1,0 +1,5 @@
+csvfile	genemat.csv
+rdsfile	mediannorm.rds
+conditions	conditions.txt
+parti	parti.csv
+NGVector	NGVector.rds

@@ -1,0 +1,2 @@
+Plugin EmpiricalBayes inputfile parameters.eb.txt outputfile EBTest.rds
+Plugin Posterior inputfile EBTest.rds outputfile MultiPP

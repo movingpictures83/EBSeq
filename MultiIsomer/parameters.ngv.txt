@@ -1,0 +1,3 @@
+isonames	MultiIsomer/isonames.txt
+isogenenames	MultiIsomer/isogenenames.txt
+isosizes	MultiIsomer/mediannorm.rds

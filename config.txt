@@ -1,0 +1,42 @@
+Prefix pipelines/EBSeq
+
+##################################################################
+# Genes
+Plugin MedianNorm inputfile Gene/genemat.csv outputfile Gene/mediannorm.rds
+##################################################################
+
+##################################################################
+# Isoforms
+Plugin MedianNorm inputfile Isomer/genemat.csv outputfile Isomer/mediannorm.rds
+Plugin NGVector inputfile Isomer/parameters.ngv.txt outputfile Isomer/NGVector.rds
+##################################################################
+
+##################################################################
+# Multiple Genes
+Plugin MedianNorm inputfile MultiGene/genemat.csv outputfile MultiGene/mediannorm.rds
+Plugin GetPatterns inputfile MultiGene/conditions.txt outputfile MultiGene/parti.csv
+##################################################################
+
+##################################################################
+# Multiple Isoforms
+Plugin MedianNorm inputfile MultiIsomer/genemat.csv outputfile MultiIsomer/mediannorm.rds
+Plugin NGVector inputfile MultiIsomer/parameters.ngv.txt outputfile MultiIsomer/NGVector.rds
+Plugin GetPatterns inputfile MultiIsomer/conditions.txt outputfile MultiIsomer/parti.csv
+##################################################################
+
+Kitty Gene/
+Pipeline pipelines/EBSeq/config.single.txt
+Pipeline pipelines/EBSeq/config.analyze.txt
+Kitty Isomer/
+Pipeline pipelines/EBSeq/config.single.txt
+Pipeline pipelines/EBSeq/config.analyze.txt
+Kitty MultiGene/
+Pipeline pipelines/EBSeq/config.multiple.txt
+Pipeline pipelines/EBSeq/config.analyze.txt
+Kitty MultiIsomer/
+Pipeline pipelines/EBSeq/config.multiple.txt
+Pipeline pipelines/EBSeq/config.analyze.txt
+
+Kitty .
+Plugin PlotFoldChange inputfile parameters/parameters.plotFC.txt outputfile Gene/foldchange.pdf
+Plugin PolyFitPlot inputfile Isomer/EBTest.rds outputfile Isomer/polyfit.pdf

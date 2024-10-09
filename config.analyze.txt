@@ -1,0 +1,2 @@
+Plugin QuantileQuantile inputfile EBTest.rds outputfile QQP.pdf
+Plugin DenNHist inputfile EBTest.rds outputfile DenNHist.pdf

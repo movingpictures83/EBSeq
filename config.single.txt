@@ -1,0 +1,3 @@
+Plugin EmpiricalBayes inputfile parameters.eb.txt outputfile EBTest.rds
+Plugin DERobust inputfile EBTest.rds outputfile EBDERes
+Plugin PosteriorFold inputfile EBTest.rds outputfile postfold

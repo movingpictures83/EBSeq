@@ -1,0 +1,3 @@
+isonames	Isomer/isonames.txt
+isogenenames	Isomer/isogenenames.txt
+isosizes	Isomer/mediannorm.rds
