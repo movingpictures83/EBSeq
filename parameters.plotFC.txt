@@ -1,2 +1,2 @@
-empirical	EBTest.rds
-genefc	postfold.rds
+empirical	Gene/EBTest.rds
+genefc	Gene/postfold.rds

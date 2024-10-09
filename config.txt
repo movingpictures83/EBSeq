@@ -38,5 +38,5 @@ Pipeline pipelines/EBSeq/config.multiple.txt
 Pipeline pipelines/EBSeq/config.analyze.txt
 
 Kitty .
-Plugin PlotFoldChange inputfile parameters/parameters.plotFC.txt outputfile Gene/foldchange.pdf
+Plugin PlotFoldChange inputfile parameters.plotFC.txt outputfile Gene/foldchange.pdf
 Plugin PolyFitPlot inputfile Isomer/EBTest.rds outputfile Isomer/polyfit.pdf
